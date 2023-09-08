@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <!--=============== REMIX ICONS ===============-->
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Encontre o veículo dos seus sonhos em Divinópolis - MG. Descubra nossa seleção de carros de alta qualidade.">
+  <meta name="keywords" content="carros, veículos, Divinópolis, automóveis">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Grann Automoveis - Escolha o veiculo do seu sonho">
+  <meta property="og:description" content="Encontre o veículo dos seus sonhos em Divinópolis - MG. Descubra nossa seleção de carros de alta qualidade.">
+  <meta property="og:image" content="URL-da-imagem">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@seusite">
+  <meta name="twitter:title" content="Grann Automoveis - Escolha o veiculo do seu sonho">
+  <meta name="twitter:description" content="Encontre o veículo dos seus sonhos em Divinópolis - MG. Descubra nossa seleção de carros de alta qualidade.">
+  <!--<meta property="og:url" content="https://www.seusite.com/pagina"> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Grann Automoveis - Escolha o veiculo do seu sonho</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/stylemarca.css">
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo23">GRANN AUTOMOVEIS</a>
+
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link><strong>HOME</strong></a>
+          </li>
+
+          <li>
+            <a href="#featured__filters" class="navbar-link" data-nav-link><strong>EXPLORAR VEÍCULOS</strong></a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link><strong>ENCOMENDAR</strong></a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+
+
+
+
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">ENCONTRE O VEÍCULO QUE VOCÊ DESEJA</h2>
+            <p class="hero-text">
+              <strong>Seu sonho mais perto de você!</strong>
+            </p>
+
+          </div>
+
+          <div class="hero-banner" id="hero-banner"></div>
+
+
+          <form action="" class="hero-form">
+
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Nome do Modelo ou Marca</label>
+
+              <input type="text" name="car-model" id="input-1" class="input-field"
+                placeholder="Digite o nome">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Valor Maximo</label>
+
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Digite o Valor">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Ano</label>
+
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Digite o ano do Modelo">
+            </div>
+
+            <button type="submit" class="btn">Buscar</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+      <section class="featured section" id="featured">
+        <h2 class="section__title">O QUE VOCÊ DESEJA VER?</h2></br>
+
+        <div class="featured__container container">
+          <ul class="featured__filters">
+              <li>
+                <button class="featured__item active-featured transparent-button" data-filter="all">
+                  <span class="featured_item_all"></span>
+              </button>
+              
+              </li>
+              <li>
+                <button class="featured__item" id="motox" data-filter=".tesla">
+                    <img src="assets/images/moto.svg" alt="logo-3" class="svg-icon">
+                </button>
+            </li>
+            <li>
+                <button class="featured__item" id="carrox" data-filter=".audi">
+                    <img src="assets/images/carro.svg" alt="logo-2" class="svg-icon">
+                </button>
+            </li>
+            
+              <li>
+                <button class="featured__item active-featured transparent-button" data-filter="all">
+                  <span class="featured_item_all"></span>
+              </button>
+              </li>
+          </ul>
+
+
+      </div>
+  </section>
+
+        </div>
+    </section>
+
+ <!--==================== POPULAR ====================-->
+
+  <div class="popular__container container swiper">
+      <div class="swiper-wrapper">
+          <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="popular__title">Porsche</h1>
+              <h3 class="popular__subtitle">Turbo S</h3>
+
+              <img src="assets/images/popular1.png" alt="popular-1" class="popular__img">
+
+              <div class="popular__data">
+                  <div class="popular__data-group">
+                      <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-funds-box-line"></i> 356 Km/h
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-charging-pile-2-line"></i> Electric
+                  </div>
+              </div>
+
+              <h3 class="popular__price">$175,900</h3>
+
+              <button class="button popular__button">
+                  <i class="ri-shopping-bag-2-line"></i>
+              </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="popular__title">Porsche</h1>
+              <h3 class="popular__subtitle">Taycan</h3>
+
+              <img src="assets/images/popular2.png" alt="popular-2" class="popular__img">
+
+              <div class="popular__data">
+                  <div class="popular__data-group">
+                      <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-funds-box-line"></i> 356 Km/h
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-charging-pile-2-line"></i> Electric
+                  </div>
+              </div>
+
+              <h3 class="popular__price">$114,900</h3>
+
+              <button class="button popular__button">
+                  <i class="ri-shopping-bag-2-line"></i>
+              </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="popular__title">Porsche</h1>
+              <h3 class="popular__subtitle">Turbo S Cross</h3>
+
+              <img src="assets/images/popular3.png" alt="popular-3" class="popular__img">
+
+              <div class="popular__data">
+                  <div class="popular__data-group">
+                      <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-funds-box-line"></i> 356 Km/h
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-charging-pile-2-line"></i> Electric
+                  </div>
+              </div>
+
+              <h3 class="popular__price">$150,900</h3>
+
+              <button class="button popular__button">
+                  <i class="ri-shopping-bag-2-line"></i>
+              </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="popular__title">Porsche</h1>
+              <h3 class="popular__subtitle">Boxster 718</h3>
+
+              <img src="assets/images/popular4.png" alt="popular-4" class="popular__img">
+
+              <div class="popular__data">
+                  <div class="popular__data-group">
+                      <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-funds-box-line"></i> 356 Km/h
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-charging-pile-2-line"></i> Electric
+                  </div>
+              </div>
+
+              <h3 class="popular__price">$125,900</h3>
+
+              <button class="button popular__button">
+                  <i class="ri-shopping-bag-2-line"></i>
+              </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="popular__title">Porsche</h1>
+              <h3 class="popular__subtitle">Cayman</h3>
+
+              <img src="assets/images/popular5.png" alt="popular-5" class="popular__img">
+
+              <div class="popular__data">
+                  <div class="popular__data-group">
+                      <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-funds-box-line"></i> 356 Km/h
+                  </div>
+                  <div class="popular__data-group">
+                      <i class="ri-charging-pile-2-line"></i> Electric
+                  </div>
+              </div>
+
+              <h3 class="popular__price">$128,900</h3>
+
+              <button class="button popular__button">
+                  <i class="ri-shopping-bag-2-line"></i>
+              </button>
+          </article>
+      </div>
+
+      <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+</br></br>
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+    
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">Grann Automoveis</a>. Todos os direitos reservados.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--========== SCROLL UP ==========-->
+
+</body>
+
+</html>
